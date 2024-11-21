@@ -51,6 +51,14 @@ fun FormulirView(
         )
 
         // Gender Selection
+        Text(
+            text = "Jenis Kelamin:",
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(vertical = 8.dp)
+                .align(Alignment.Start)
+        )
+
         Row(modifier = Modifier.fillMaxWidth()) {
             listJK.forEach { selectedGender ->
                 Row(verticalAlignment = Alignment.CenterVertically) {
