@@ -19,10 +19,11 @@ class SiswaViewModel : ViewModel() {
         _statusUI.update { statusSaatIni ->
             statusSaatIni.copy(
                 nama = ls[0],
-                gender = ls[1],
-                email = ls[2],
-                alamat = ls[3],
-                notelp = ls[4]
+                nim = ls[1],
+                gender = ls[2],
+                email = ls[3],
+                alamat = ls[4],
+                notelp = ls[5]
             )
         }
     }
