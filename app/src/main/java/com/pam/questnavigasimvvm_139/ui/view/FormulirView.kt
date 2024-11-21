@@ -21,6 +21,7 @@ fun FormulirView(
     onSubmitClicked: (List<String>) -> Unit = {}
 ) {
     var nama by remember { mutableStateOf("") }
+    var nim by remember { mutableStateOf("") }
     var email by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
     var notelepon by remember { mutableStateOf("") }
@@ -38,6 +39,14 @@ fun FormulirView(
             onValueChange = { nama = it },
             label = { Text("Nama") },
             placeholder = { Text("Isi Nama Anda") },
+            modifier = modifier.fillMaxWidth().padding(5.dp)
+        )
+
+        TextField(
+            value = nim,
+            onValueChange = { nim = it },
+            label = { Text("Nim") },
+            placeholder = { Text("Isi Nim Anda") },
             modifier = modifier.fillMaxWidth().padding(5.dp)
         )
 
@@ -85,7 +94,7 @@ fun FormulirView(
 
         // Submit Button
         Button(onClick = {
-            val listData = listOf(nama, gender, alamat, email, notelepon)
+            val listData = listOf(nama, nim, gender, alamat, email, notelepon)
             onSubmitClicked(listData)
         }) {
             Text("Simpan")
