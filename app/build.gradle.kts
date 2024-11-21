@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.pam.questnavigasimvvm_139"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.pam.questnavigasimvvm_139"
