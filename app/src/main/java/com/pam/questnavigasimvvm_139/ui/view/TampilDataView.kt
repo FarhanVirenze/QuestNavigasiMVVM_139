@@ -18,6 +18,7 @@ import com.pam.questnavigasimvvm_139.model.Datasiswa
 fun getMockData(): Datasiswa {
     return Datasiswa(
         nama = "Muhamad Farhan",
+        nim = "20220140139",
         gender = "Laki-laki",
         email = "farhanvirenze18@gmail.com",
         alamat = "Jalan Bunga",
@@ -46,6 +47,7 @@ fun TampilDataView(
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
         TampilData(label = "Nama", value = uiState.nama)
+        TampilData(label = "Nim", value = uiState.nim)
         TampilData(label = "Jenis Kelamin", value = uiState.gender)
         TampilData(label = "Email", value = uiState.email)
         TampilData(label = "Alamat", value = uiState.alamat)
